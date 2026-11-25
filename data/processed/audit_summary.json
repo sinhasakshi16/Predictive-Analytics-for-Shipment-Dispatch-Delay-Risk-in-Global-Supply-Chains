@@ -1,0 +1,20 @@
+{
+  "rows": 180519,
+  "columns": 53,
+  "duplicate_rows_by_row_hash": 0,
+  "target_rows_after_valid_target_filter": 180519,
+  "target_rate": 0.5482913155955883,
+  "target_counts": {
+    "0": 81542,
+    "1": 98977
+  },
+  "missing_cells": 336209,
+  "columns_all_missing": [
+    "Product Description"
+  ],
+  "columns_with_missing_values": 4,
+  "date_min": "2015-01-01 00:00:00",
+  "date_max": "2018-01-31 23:38:00",
+  "unique_orders": 65752,
+  "target_matches_late_delivery_status": true
+}

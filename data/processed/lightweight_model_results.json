@@ -1,0 +1,80 @@
+{
+  "model": "smoothed_category_rate_average",
+  "note": "Lightweight benchmark; scores average smoothed train-set late rates for order-time feature groups.",
+  "test_cutoff_date": "2017-07-09 23:14:00",
+  "train_rows": 157741,
+  "test_rows": 22778,
+  "train_orders": 52601,
+  "test_orders": 13151,
+  "overlapping_order_ids": 0,
+  "test_target_rate": 0.5483361137940118,
+  "accuracy": 0.5636140135218193,
+  "precision": 0.5597581552305961,
+  "recall": 0.9562049639711769,
+  "f1": 0.7061432034529651,
+  "roc_auc": 0.7320062192833583,
+  "pr_auc": 0.7961942764998068,
+  "confusion_matrix_tn_fp_fn_tp": [
+    [
+      895,
+      9393
+    ],
+    [
+      547,
+      11943
+    ]
+  ],
+  "features": [
+    "Shipping Mode",
+    "Market",
+    "Order Region",
+    "Category Name",
+    "Customer Segment",
+    "order_month",
+    "scheduled_days"
+  ],
+  "excluded_post_outcome_fields": [
+    "Days for shipping (real)",
+    "Delivery Status",
+    "shipping date (DateOrders)"
+  ],
+  "order_level_evaluation": {
+    "unit": "order",
+    "test_orders": 13151,
+    "test_late_order_rate": 0.5496159987833625,
+    "capacity_results": [
+      {
+        "capacity_fraction": 0.05,
+        "orders_flagged": 658,
+        "orders_total": 13151,
+        "late_orders_caught": 618,
+        "late_orders_total": 7228,
+        "late_order_recall_at_capacity": 0.08550083010514666,
+        "precision_at_capacity": 0.939209726443769,
+        "late_order_baseline_rate": 0.5496159987833625
+      },
+      {
+        "capacity_fraction": 0.1,
+        "orders_flagged": 1316,
+        "orders_total": 13151,
+        "late_orders_caught": 1240,
+        "late_orders_total": 7228,
+        "late_order_recall_at_capacity": 0.17155506364139458,
+        "precision_at_capacity": 0.9422492401215805,
+        "late_order_baseline_rate": 0.5496159987833625
+      },
+      {
+        "capacity_fraction": 0.2,
+        "orders_flagged": 2631,
+        "orders_total": 13151,
+        "late_orders_caught": 2385,
+        "late_orders_total": 7228,
+        "late_order_recall_at_capacity": 0.3299667957941339,
+        "precision_at_capacity": 0.9064994298745724,
+        "late_order_baseline_rate": 0.5496159987833625
+      }
+    ],
+    "score_aggregation": "mean line-item risk score per order",
+    "label_aggregation": "maximum line-item target; consistency validated"
+  }
+}

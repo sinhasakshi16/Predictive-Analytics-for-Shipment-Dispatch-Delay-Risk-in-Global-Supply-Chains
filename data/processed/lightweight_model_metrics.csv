@@ -1,0 +1,2 @@
+model,note,test_cutoff_date,train_rows,test_rows,train_orders,test_orders,overlapping_order_ids,test_target_rate,accuracy,precision,recall,f1,roc_auc,pr_auc,confusion_matrix_tn_fp_fn_tp
+smoothed_category_rate_average,Lightweight benchmark; scores average smoothed train-set late rates for order-time feature groups.,2017-07-09 23:14:00,157741,22778,52601,13151,0,0.5483361137940118,0.5636140135218193,0.5597581552305961,0.9562049639711769,0.7061432034529651,0.7320062192833583,0.7961942764998068,"[[895, 9393], [547, 11943]]"
